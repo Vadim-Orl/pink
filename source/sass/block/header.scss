@@ -1,13 +1,35 @@
 .page-header {
   position: relative;
-  background-color: $basic-blue;
   color:white;
+  background-color: transparent;
+}
+
+
+
+.main-nav--opened .page-header__logo-block {
+  border-bottom: 1px solid black;
 }
 
 .page-header__logo {
-  display: block;
-  height: 69px;
-  width: 100%;
+  display: inline-block;
   padding: 20px 23px;
-  border-bottom:1px solid black;
+  height: 69px;
+
+  @media (min-width: $desktop-width){
+    padding-left: 130px;
+  }
+}
+
+
+.page__logo {
+  cursor: pointer;
+
+  &:hover {
+    fill: $basic-pink;
+  }
+
+  &:active {
+    fill: #FFFFFF;
+    opacity: 0.3;
+  }
 }

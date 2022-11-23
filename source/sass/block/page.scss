@@ -62,16 +62,17 @@ a {
 .page-body {
   font-family: OpenSans;
   font-weight: 400;
-
-  // padding: 0px $margin-mobile;
-
-  // @media (min-width: $tablet-width){
-  //   padding: 0 $margin-tablet;
-  // }
-
-  // @media (min-width: $desktop-width){
-  //   padding: 0 $margin-desktop;
-  // }
-
   margin-bottom: 500px;
+}
+
+.button {
+  height: 55px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  cursor: pointer;
+
+  text-align: center;
+  color: #FFFFFF;
 }
