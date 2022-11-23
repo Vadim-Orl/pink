@@ -1,0 +1,77 @@
+
+@font-face {
+  font-family: "OpenSans"; /* Имя шрифта */
+  font-weight: 400;
+  font-style: normal;
+
+  src: url("../fonts/opensans.woff2") format("woff2"),
+  url("../fonts/opensans.woff") format("woff");
+ }
+
+ @font-face {
+  font-family: "OpenSans"; /* Имя шрифта */
+  font-weight: 700;
+  font-style: normal;
+
+  src: url("../fonts/opensansbold.woff2") format("woff2"),
+  url("../fonts/opensansbold.woff") format("woff");
+ }
+
+ @font-face {
+  font-family: "OpenSans"; /* Имя шрифта */
+  font-weight: 300;
+  font-style: normal;
+
+  src: url("../fonts/opensanslight.woff2") format("woff2"),
+  url("../fonts/opensanslight.woff") format("woff");
+ }
+
+*,::before,::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  // color: white;
+}
+
+.page-main {
+  font-family: OpenSans;
+  font-weight: 400;
+}
+
+.visually-hidden:not(:focus):not(:active),
+  input[type="checkbox"].visually-hidden,
+  input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+.page-body {
+  font-family: OpenSans;
+  font-weight: 400;
+
+  // padding: 0px $margin-mobile;
+
+  // @media (min-width: $tablet-width){
+  //   padding: 0 $margin-tablet;
+  // }
+
+  // @media (min-width: $desktop-width){
+  //   padding: 0 $margin-desktop;
+  // }
+
+  margin-bottom: 500px;
+}
