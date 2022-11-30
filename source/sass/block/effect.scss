@@ -4,7 +4,7 @@
   align-items: center;
   padding: 0 20px;
   padding-top: 56px;
-  padding-bottom: 67px;
+  margin-bottom: 50px;
 
   @media (max-width: $mobile-width-only){
     display: none;
@@ -12,7 +12,7 @@
 
   @media (min-width: $desktop-width){
     padding: 0 154px;
-    padding-bottom: 67px;
+
 
     background-color: #F2F2F2;
 

@@ -1,7 +1,6 @@
 .offer {
   position: relative;
   padding-top: 46px;
-  // padding-bottom: 56px;
 }
 
 .offer__slogan{
@@ -27,7 +26,7 @@
 
 .offer__list-wrapper {
   $stats-shift: -100px;
-
+  // width: 100%;
   position: relative;
   padding: 53px 20px 0 20px;
   background-color: #F2F2F2;
@@ -45,9 +44,9 @@
   &:before {
     content: "";
     position: absolute;
-    width: 100%;
+    width:100%;
     height: 44px;
-    left: 1px;
+    left: 0;
     top: -43px;
 
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='100%25' height='100%25' viewBox='0 0 1 1' preserveAspectRatio='none' %3E%3Cpolygon fill='%23F2F2F2' points='0,1 1,0 1,1'/%3E%3C/svg%3E");

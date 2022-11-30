@@ -1,0 +1,152 @@
+.slider {
+  position: relative;
+  display: block;
+  // overflow: hidden;
+  z-index: 1;
+
+  @media (min-width: $desktop-width){
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  @include border-help(2px, rgb(23, 13, 101));
+}
+
+.slider__list {
+  $slider__count: 3;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  scroll-snap-points-x: repeat(300px);
+  display: flex;
+  flex-shrink: 0;
+  width: calc(100% * $slider__count);
+  transition: all 0ms ease 0s;
+  transform: translate3d(1px, 0px, 0px);
+}
+
+
+.slider__item {
+  scroll-snap-align: start;
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0 20px;
+  width: 900px;
+  // width: 100%;
+  // @include border-help(15px, red);
+}
+
+.slider_toggles {
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width){
+    display: none;
+  }
+}
+
+.slider__toggle {
+  padding: 0;
+  margin-left: 19px;
+  width: 6px;
+  height: 6px;
+  background-color: rgb(142, 131, 131);
+  border: none;
+  border-radius: 50%;
+
+  &--current {
+    border: 3px solid #283645;
+    width: 9px;
+    height: 9px;
+    background-color: white;
+  }
+}
+
+.slider__list button {
+  display: none;
+  @media (min-width: $desktop-width){
+    position: absolute;
+    display: block;
+  }
+}
+
+.slider__btn {
+  @include border-help(2px, rgb(23, 13, 101));
+
+  background-color: inherit;
+  border: 0;
+  cursor: pointer;
+  width: 50px;
+  height: 100%;
+
+  // opacity: 0.3;
+// z-index: 1;
+  &:hover {
+    opacity: 1;
+  }
+
+  &--prev,
+  &--next {
+    left: 1px;
+
+    &::after,
+    &::before {
+      position: absolute;
+      content: "";
+      width: 22px;
+      height: 2px;
+      left: 13px;
+      background-color: #283645;
+      border-radius: 0  2px 2px 0;
+    }
+
+    &::after {
+      top: 184px;
+
+    }
+    &::before {
+      top: 169px;
+
+    }
+  }
+
+  &--prev {
+    &::after {
+      rotate: 45deg;
+    }
+
+    &::before {
+      rotate: -45deg;
+    }
+  }
+
+  &--next {
+    left: 910px;
+
+    &::after {
+      rotate: -45deg;
+    }
+
+    &::before {
+      rotate: 45deg;
+    }
+  }
+}
+
+
+.slider__img {
+  display: none;
+
+  @media (min-width: $desktop-width){
+    display: inline-block;
+    margin: 0 auto;
+    left: 430px;
+    top: 10px;
+    // right: 0;
+    position: absolute;
+    margin-bottom: 58px;
+    fill: #820606;
+  }
+}
