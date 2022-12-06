@@ -1,21 +1,19 @@
 .slider {
   position: relative;
   display: block;
-  // overflow: hidden;
+  overflow: hidden;
   z-index: 1;
 
   @media (min-width: $desktop-width){
     max-width: 960px;
     margin: 0 auto;
   }
-  @include border-help(2px, rgb(23, 13, 101));
+  // @include border-help(2px, rgb(23, 13, 101));
 }
 
 .slider__list {
   $slider__count: 3;
-  overflow: auto;
-  scroll-snap-type: x mandatory;
-  scroll-snap-points-x: repeat(300px);
+
   display: flex;
   flex-shrink: 0;
   width: calc(100% * $slider__count);
@@ -29,22 +27,15 @@
   margin: 0;
   margin-bottom: 50px;
   padding: 0 20px;
-  width: 900px;
-  // width: 100%;
+  width: 100%;
   // @include border-help(15px, red);
 }
 
 .slider_toggles {
   display: block;
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  right: 0;
   margin: 0 auto;
 
-  @media (min-width: $desktop-width){
-    display: none;
-  }
+  
 }
 
 .slider__toggle {
@@ -64,8 +55,9 @@
   }
 }
 
-.slider__list button {
+.slider__btn {
   display: none;
+
   @media (min-width: $desktop-width){
     position: absolute;
     display: block;
@@ -73,13 +65,14 @@
 }
 
 .slider__btn {
-  @include border-help(2px, rgb(23, 13, 101));
-
-  background-color: inherit;
+  // @include border-help(2px, rgb(23, 13, 101));
+  position: absolute;
+  background-color: white;
   border: 0;
   cursor: pointer;
   width: 50px;
   height: 100%;
+  top: 0;
 
   // opacity: 0.3;
 // z-index: 1;
@@ -89,10 +82,11 @@
 
   &--prev,
   &--next {
-    left: 1px;
+    left: 0;
 
     &::after,
     &::before {
+
       position: absolute;
       content: "";
       width: 22px;
@@ -100,6 +94,7 @@
       left: 13px;
       background-color: #283645;
       border-radius: 0  2px 2px 0;
+      z-index: 100;
     }
 
     &::after {
@@ -140,6 +135,9 @@
   display: none;
 
   @media (min-width: $desktop-width){
+  // @include border-help(2px, rgb(23, 13, 101));
+    width: 78px;
+    height: 64px;
     display: inline-block;
     margin: 0 auto;
     left: 430px;
@@ -147,6 +145,6 @@
     // right: 0;
     position: absolute;
     margin-bottom: 58px;
-    fill: #820606;
+    fill: #EFEFEF;
   }
 }

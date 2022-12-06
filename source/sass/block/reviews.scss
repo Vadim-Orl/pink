@@ -76,3 +76,9 @@
   }
 
 }
+
+.reviews__toggles {
+  @media (min-width: $desktop-width){
+    display: none;
+  }
+}
