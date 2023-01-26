@@ -10,3 +10,7 @@ navToggle.addEventListener('click', () =>{
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+
+
+require("./module/map.js");

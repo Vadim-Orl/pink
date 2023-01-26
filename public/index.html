@@ -39,16 +39,11 @@
 
           <p class="application__title">Взгляните на жизнь иначе!</p>
 
-          <!-- <picture >
-            <source class="application__img" srcset="img/phone-hand-tablet@1x.png" media="(min-width:660px)" />
-            <source class="application__img" srcset="img/iphone-hand-desktop@1x.png" media="(min-width: 1200px)" />
-            <img class="application__img" src="img\iphone-hand-mobile@1x.png"  alt="">
-          </picture> -->
-
-          <!-- <img class="application__img" width="300" height="276"  src="img\iphone-hand-mobile@1x.png" alt=""> -->
-          <!-- <img class="application__img"  src="img\iphone-hand-tablet@1x.png" alt=""> -->
-          <!-- <img class="application__img"  src="img\iphone-hand-desktop@1x.png" alt=""> -->
-
+          <picture >
+            <source srcset="img/iphone-hand-desktop@1x.png" media="(min-width: 1200px)" />
+            <source srcset="img/iphone-hand-tablet@1x.png" media="(min-width: 660px)" />
+            <img class="application__img" src="img/iphone-hand-mobile@1x.png"  alt="">
+          </picture>
 
           <div class="application__download">
 
@@ -85,7 +80,7 @@
       </header>
       <main>
        <section class="offer">
-        <p class="offer__slogan">
+        <p class="slogan offer__slogan">
           Устали от серости мегаполиса?
           <br class="br-mobile">
           <br>
@@ -312,9 +307,42 @@
           </div>
         </section>
 
+        <section class="contacts">
+
+          <h2 class="slogan contacts__slogan">Остались вопросы? <br> Свяжитесь с нами!</h2>
+
+          <dl class="contacts__options">
+            <div class="contacts__item">
+              <dt class="contacts__title"> Звоните:</dt>
+              <dd class="contacts__info"> +7 (812) 555-66-66</dd>
+            </div>
+
+            <div class="contacts__item">
+              <dt class="contacts__title">Пишите:</dt>
+              <dd class="contacts__info">mail@htmlacademy.ru</dd>
+            </div>
+
+           <div class="contacts__item">
+              <dt class="contacts__title">Приезжайте в гости:</dt>
+              <dd class="contacts__info">
+                ул. Большая <br>
+                Конюшенная, 19/8
+              </dd>
+           </div>
+          </dl>
+
+          <div class="map contacts__map" id="map">
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d63773.90732124622!2d30.309656598288072!3d60.03273684463384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0LrQsNGA0YLQsA!5e0!3m2!1sru!2sru!4v1674663415346!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+          </div>
+
+        </section>
+
       </main>
     </div>
 
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=d6a2c138-4c4d-496e-9ae9-2c089d494c78&lang=ru_RU" type="text/javascript">
+  </script>
   <script src="js/main.js"></script>
   </body>
 </html>
