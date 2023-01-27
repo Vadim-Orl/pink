@@ -134,17 +134,21 @@
 
   }
 
-  &--mobtab {
-    width: 268px;
 
-    @media (min-width: $desktop-width){
-      display: none;
+
+  &--desc {
+    display: none;
+    width: 186px;
+
+    @media (min-width: 1200px){
+      display: block;
     }
   }
 
-  &--desc {
-    width: 186px;
-    @media (max-width: $tablet-size-only){
+  &--mobtab {
+    width: 268px;
+
+    @media (min-width: 1200px){
       display: none;
     }
   }
