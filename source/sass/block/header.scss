@@ -19,17 +19,3 @@
     padding-left: 130px;
   }
 }
-
-
-.page__logo {
-  cursor: pointer;
-
-  &:hover {
-    fill: $basic-pink;
-  }
-
-  &:active {
-    fill: #FFFFFF;
-    opacity: 0.3;
-  }
-}
