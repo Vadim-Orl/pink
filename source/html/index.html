@@ -129,10 +129,14 @@
               <dd class="offer__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</dd>
             </div>
           </dl>
-          <!-- <img class="offer__img" src="img/iphone-screen-mobile@1x.png" alt=""> -->
-          <!-- <div class="offer__img-wrapper"> -->
-            <img class="offer__img offer__img--mobtab" src="img/iphone-screen-3-tablet@1x.png" alt="">
-          <!-- </div> -->
+            <picture>
+              <source media="(min-width: 659px)" srcset="img/iphone-screen-3-tablet@1x.png, img/iphone-screen-3-tablet@2x.png 2x">
+
+              <img class="offer__img offer__img--mobtab" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="" width="157"
+              height="320">
+            </picture>
+
+
         </div>
        </section>
 
