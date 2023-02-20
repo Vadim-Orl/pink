@@ -31,12 +31,18 @@ $desktop-margin: 252px;
 }
 
 .footer__logo {
-  &:hover path,
-  &:focus path {
+  height: 40px;
+  width: 147px;
+  cursor: pointer;
+  fill: #283645;
+
+  &:hover,
+  &:focus {
     fill: $basic-pink;
   }
 
   &:active {
+    fill: #283645;
     opacity: 0.1;
   }
 }

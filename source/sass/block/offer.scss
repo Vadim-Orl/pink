@@ -20,6 +20,8 @@
 }
 
 .offer__list-wrapper {
+@include border-help(5px, red);
+
   $stats-shift: -100px;
   // width: 100%;
   position: relative;
@@ -29,6 +31,8 @@
 
   @media (min-width: $tablet-width){
     display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
     padding-top: 0;
   }
 
@@ -50,6 +54,8 @@
 
 
 .offer__list {
+@include border-help(5px, rgb(0, 0, 255));
+
   @include reset-list;
   display: block;
 
@@ -115,6 +121,8 @@
 
 
 .offer__img {
+@include border-help(5px, red);
+
   $stats-shift: -44px;
   position: relative;
   display: block;
@@ -124,7 +132,7 @@
   @media (min-width: $tablet-width){
     // height: 547px;
     top: $stats-shift;
-    order: -1;
+    order: -2;
     margin-bottom: $stats-shift;
   }
 
@@ -133,8 +141,6 @@
     top: -95px;
 
   }
-
-
 
   &--desc {
     display: none;
@@ -146,8 +152,6 @@
   }
 
   &--mobtab {
-    width: 268px;
-
     @media (min-width: 1200px){
       display: none;
     }

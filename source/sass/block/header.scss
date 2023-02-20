@@ -14,8 +14,20 @@
   display: inline-block;
   padding: 20px 23px;
   height: 69px;
+  cursor: pointer;
+
 
   @media (min-width: $desktop-width){
     padding-left: 130px;
   }
+
+   &:hover > svg,
+   &:focus > svg {
+      color: $basic-pink;
+      fill: $basic-pink;
+    }
+
+    &:active > svg{
+      opacity: 0.3;
+    }
 }

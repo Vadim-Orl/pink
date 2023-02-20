@@ -1,21 +1,7 @@
-.a {
-  @include border-help(5px, rgb(119, 255, 0));
 
-  width: 724px;
-  height: 223px;
-}
-
-.b {
-  @include border-help(5px, rgb(0, 72, 255));
-}
 
 .logo {
-  &:hover {
-    fill: $basic-pink;
-  }
-// @include border-help(5px, red);
   display: block;
-  cursor: pointer;
 
   width: 145px;
   height: 40px;
@@ -55,12 +41,4 @@
     }
   }
 
-  // &:hover {
-  //   fill: $basic-pink;
-  // }
-
-  // &:active {
-  //   fill: #FFFFFF;
-  //   opacity: 0.3;
-  // }
 }

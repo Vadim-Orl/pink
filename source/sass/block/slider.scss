@@ -35,7 +35,7 @@
   display: block;
   margin: 0 auto;
 
-  
+
 }
 
 .slider__toggle {
@@ -93,6 +93,7 @@
       height: 2px;
       left: 13px;
       background-color: #283645;
+      opacity: 0.3;
       border-radius: 0  2px 2px 0;
       z-index: 100;
     }
@@ -145,6 +146,9 @@
     // right: 0;
     position: absolute;
     margin-bottom: 58px;
-    fill: #EFEFEF;
+    fill: rgb(239, 239, 239);
+
+    background-image: url('../img/icon-quotes.svg');
+    background-repeat: no-repeat;
   }
 }
