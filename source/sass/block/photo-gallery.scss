@@ -1,0 +1,83 @@
+.photo-gallery {
+  margin-top: 54px;
+}
+
+.photo-gallery__title {
+  width: 250px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  text-align: center;
+  font-family: 'OpenSans';
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.photocard {
+
+  margin: 0 20px 20px 20px;
+  background-color: rgba(242, 242, 242, 1);
+  padding-top: 25px;
+
+  font-family: 'OpenSans';
+}
+
+.photocard__author-image {
+  display: block;
+  margin: 0 auto;
+}
+.photocard__author-info {
+  margin: 0 10px 25px 17px;
+}
+
+.photocard__author-name {
+  font-family: 'OpenSans';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photocard__time {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.photocard__text {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photocard__like {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding-left: 28px;
+  padding-bottom: 26px;
+
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $basic-pink;
+  cursor: pointer;
+
+  &--icon {
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    fill: transparent;
+    stroke: $basic-pink;
+    stroke-width: 1px;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:hover &--icon {
+    // fill-rule: nonzero;
+    fill: $basic-pink;
+  }
+}
+

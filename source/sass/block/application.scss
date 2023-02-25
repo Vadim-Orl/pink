@@ -12,38 +12,6 @@
   }
 
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -100px;
-    left: 0;
-    width: 100%;
-    height: calc(100% + 100px);
-    z-index: -1;
-    background-image: url("../img/bg-back-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    @media (min-width: $mobile-size) and (min-resolution: 2dppx) {
-      background-image: url("../img/bg-back-mobile@2x.jpg");
-    }
-
-    @media (min-width: $tablet-width){
-      background-image: url("../img/bg-back-tablet@1x.jpg");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/bg-back-tablet@2x.jpg");
-      }
-      // top: -80px;
-    }
-    @media (min-width: $desktop-width){
-      background-image: url("../img/bg-back-desktop@1x.jpg");
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/bg-back-desktop@2x.jpg");
-      }
-    }
-
-  }
 }
 
 .application__wrapper {
@@ -107,11 +75,13 @@
     right: 0;
     bottom: 0;
     margin: auto;
-    z-index: -1;
+    // z-index: -1;
   }
 }
 
 .application__download {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items:center;
