@@ -66,6 +66,7 @@
     <path d="M13.91,6.75c-1.17,2.25-4.3,5.31-6.07,6.94c-0.1903,0.1718-0.4797,0.1718-0.67,0C5.39,12.06,2.26,9,1.09,6.75
    C-1.48,1.8,5-1.5,7.5,3.45C10-1.5,16.48,1.8,13.91,6.75z"/>
   </symbol>
+  </svg>
 
 
     <header class="page-header ">
@@ -102,14 +103,19 @@
 
         <div class="photo-gallery__wrapper">
 
-          <blockquote class="photocard">
-            <img class="photocard__author-image" src="../img/panorama-mobile@1x.jpg" width="280" height="180" alt="Фото Анна" >
+          <blockquote class="photocard photocard--top">
+            <!-- <img class="photocard__author-image" src="../img/panorama-tablet@1x.jpg" width="280" height="180" alt="Фото Анна" > -->
+            <picture>
+              <source media="(min-width: 660px)" srcset="../img/panorama-desktop@1x.jpg, ../img/panorama-desktop@2x.jpg 2x">
+              <img class="photocard__author-image" src="../img/panorama-tablet@1x.jpg" srcset="../img/panorama-tablet@2x.jpg 2x" alt="Картинка">
+            </picture>
+
             <div class="photocard__author-info">
               <cite class="photocard__author-name">
                 Анна <span class="photocard__time">(5 минут назад)</span>
               </cite>
               <p class="photocard__text">
-                Прыгать или нет? Напишите в
+                1 Прыгать или нет? Напишите в
                 комментарии свой совет и
                 смотрите прямую трансляцию в
                 перископе, задавайте свои вопросы!
@@ -123,6 +129,131 @@
             </div>
           </blockquote>
 
+          <blockquote class="photocard photocard--secondary">
+            <picture>
+              <source media="(min-width: 660px)" srcset="../img/photo-car-desktop@1x.jpg, ../img/photo-car-desktop@2x.jpg 2x">
+              <img class="photocard__author-image" src="../img/photo-car-tablet@1x.jpg" srcset="../img/photo-car-tablet@2x.jpg 2x" alt="Картинка">
+            </picture>
+            <div class="photocard__author-info">
+              <cite class="photocard__author-name">
+                Левон <span class="photocard__time">(5 часов назад)</span>
+              </cite>
+              <p class="photocard__text">
+                Вчера он на луну летал, сегодня в руки к нам попал.
+              </p>
+              <p class="photocard__like">
+                <svg class="photocard__like--icon"  width="22" height="22">
+                  <use xlink:href="#icon-heart"></use>
+                </svg>
+                Нравится: <span class="photocard__like--num">215</span>
+              </p>
+            </div>
+          </blockquote>
+
+          <blockquote class="photocard photocard--secondary">
+            <picture>
+              <source media="(min-width: 660px)" srcset="../img/photo-drumset-desktop@1x.jpg, ../img/photo-drumset-desktop@2x.jpg 2x">
+              <img class="photocard__author-image" src="../img/photo-drumset-tablet@1x.jpg" srcset="../img/photo-drumset-tablet@2x.jpg 2x" alt="Картинка">
+            </picture>
+            <div class="photocard__author-info">
+              <cite class="photocard__author-name">
+                Антон <span class="photocard__time">(12 часов назад)</span>
+              </cite>
+              <p class="photocard__text">
+                3 Соседи будут рады!
+              </p>
+              <p class="photocard__like">
+                <svg class="photocard__like--icon"  width="22" height="22">
+                  <use xlink:href="#icon-heart"></use>
+                </svg>
+                Нравится: <span class="photocard__like--num">215</span>
+              </p>
+            </div>
+          </blockquote>
+
+          <blockquote class="photocard photocard--secondary">
+            <picture>
+              <source media="(min-width: 660px)" srcset="../img/photo-fair-desktop@1x.jpg, ../img/photo-fair-desktop@2x.jpg 2x">
+              <img class="photocard__author-image" src="../img/photo-fair-tablet@1x.jpg" srcset="../img/photo-fair-tablet@2x.jpg 2x" alt="Картинка">
+            </picture>
+            <div class="photocard__author-info">
+              <cite class="photocard__author-name">
+                Борис <span class="photocard__time">(20 часов назад)</span>
+              </cite>
+              <p class="photocard__text">
+                4 Здесь могла быть ваша цитата о высоком и вечном.
+              </p>
+              <p class="photocard__like">
+                <svg class="photocard__like--icon"  width="22" height="22">
+                  <use xlink:href="#icon-heart"></use>
+                </svg>
+                Нравится: <span class="photocard__like--num">215</span>
+              </p>
+            </div>
+          </blockquote>
+
+          <blockquote class="photocard photocard--secondary">
+            <picture>
+              <source media="(min-width: 660px)" srcset="../img/photo-pov-desktop@1x.jpg, ../img/photo-pov-desktop@2x.jpg 2x">
+              <img class="photocard__author-image" src="../img/photo-pov-tablet@1x.jpg" srcset="../img/photo-pov-tablet@2x.jpg 2x" alt="Картинка">
+            </picture>
+            <div class="photocard__author-info">
+              <cite class="photocard__author-name">
+                Сергей <span class="photocard__time">(25 часов назад)</span>
+              </cite>
+              <p class="photocard__text">
+                5 Самая кубанская в мире!
+              </p>
+              <p class="photocard__like">
+                <svg class="photocard__like--icon"  width="22" height="22">
+                  <use xlink:href="#icon-heart"></use>
+                </svg>
+                Нравится: <span class="photocard__like--num">215</span>
+              </p>
+            </div>
+          </blockquote>
+
+          <blockquote class="photocard photocard--secondary">
+            <picture>
+              <source media="(min-width: 660px)" srcset="../img/photo-road-desktop@1x.jpg, ../img/photo-road-desktop@2x.jpg 2x">
+              <img class="photocard__author-image" src="../img/photo-road-tablet@1x.jpg" srcset="../img/photo-road-tablet@2x.jpg 2x" alt="Картинка">
+            </picture>
+            <div class="photocard__author-info">
+              <cite class="photocard__author-name">
+                Максим <span class="photocard__time">(40 часов назад)</span>
+              </cite>
+              <p class="photocard__text">
+                6 Где снег-то?
+              </p>
+              <p class="photocard__like">
+                <svg class="photocard__like--icon"  width="22" height="22">
+                  <use xlink:href="#icon-heart"></use>
+                </svg>
+                Нравится: <span class="photocard__like--num">215</span>
+              </p>
+            </div>
+          </blockquote>
+
+          <blockquote class="photocard photocard--secondary">
+            <picture>
+              <source media="(min-width: 660px)" srcset="../img/photo-window-desktop@1x.jpg, ../img/photo-window-desktop@2x.jpg 2x">
+              <img class="photocard__author-image" src="../img/photo-window-tablet@1x.jpg" srcset="../img/photo-window-tablet@2x.jpg 2x" alt="Картинка">
+            </picture>
+            <div class="photocard__author-info">
+              <cite class="photocard__author-name">
+                Надежда <span class="photocard__time">(45 часов назад)</span>
+              </cite>
+              <p class="photocard__text">
+                7 Всем GM и взаимные лайки!
+              </p>
+              <p class="photocard__like">
+                <svg class="photocard__like--icon"  width="22" height="22">
+                  <use xlink:href="#icon-heart"></use>
+                </svg>
+                Нравится: <span class="photocard__like--num">215</span>
+              </p>
+            </div>
+          </blockquote>
         </div>
       </section>
     </main>
