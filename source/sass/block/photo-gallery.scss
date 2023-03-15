@@ -54,7 +54,7 @@ $row-galp: 20px;
   flex-direction: column;
   order: 1;
   width: 280px;
-  margin: 0 auto;
+  margin: 0;
 
   @media (min-width: $tablet-width){
     // grid-column-start: span 2;
