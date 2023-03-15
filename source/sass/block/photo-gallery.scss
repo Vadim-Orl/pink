@@ -7,7 +7,7 @@ $row-galp: 20px;
 }
 
 .photo-gallery__title {
-  width: 250px;
+  max-width: 500px;
   margin: 0 auto;
   margin-bottom: 60px;
   text-align: center;
@@ -19,23 +19,32 @@ $row-galp: 20px;
 .photo-gallery__wrapper {
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr;
+  // width: 280px;
+  grid-template-columns: auto;
+  justify-items: center;
   row-gap: $row-galp;
+  margin: 0 auto;
+
 
   @media (min-width: $tablet-width){
-    grid-template-columns: 1fr 1fr;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 620px;
+    grid-template-columns: 300px 300px ;
+    // margin: 0 auto;
+
+    justify-items: center;
     column-gap: 20px;
   }
 
   @media (min-width: $desktop-width){
-    grid-template-columns: 1fr 300px 1fr;
+    width: 940px;
+    margin: 0 auto;
+
+    grid-template-columns: 300px 300px 300px;
     column-gap: 20px;
     row-gap: 54px;
 
-    margin-left: $margin-desktop--photo;
-    margin-right: $margin-desktop--photo;
+    // margin-left: $margin-desktop--photo;
+    // margin-right: $margin-desktop--photo;
   }
 
 }
@@ -43,90 +52,116 @@ $row-galp: 20px;
 .photocard {
   display: flex;
   flex-direction: column;
-  // justify-content: space-between;
   order: 1;
-  margin: 0 20px;
-  min-height: 200px;
+  width: 280px;
+  margin: 0 ;
 
   @media (min-width: $tablet-width){
+    // grid-column-start: span 2;
+    // grid-column-start: 2;
+    // grid-column-end: 3;
+
     width: 300px;
-    margin: 0 auto;
+    // margin: 0 auto;
   }
 
   font-family: 'OpenSans';
 }
 
-.photocard--secondary {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width){
-    &:nth-child(2n) {
-      margin-left: auto;
-      margin-right: 0;
-    }
 
-    &:nth-child(2n+1) {
-      margin-left: 0;
-      margin-right: auto;
-    }
-  }
-
-  @media (min-width: $desktop-width){
-    margin-left: auto;
-    margin-right: 0;
-
-    &:nth-child(3n+1) {
-      margin-left: 0;
-      margin-right: auto;
-    }
-  }
-}
 
 .photocard--top {
+@include border-help(5px, red);
+  width: auto;
+
   position: relative;
   order: 0;
-  margin-left: 0;
-  margin-right: 0;
 
+  // margin: 0 auto;
   @media (min-width: $tablet-width){
     grid-column-start: span 2;
     width: auto;
 
     margin-bottom: calc(50px - $row-galp) ;
-    margin-left: -20px;
-    margin-right: -20px;
   }
 
   @media (min-width: $desktop-width){
     grid-column-start: span 3;
     width: auto;
-    margin: 0;
-
-    margin-left: -$margin-desktop--photo;
-    margin-right: -$margin-desktop--photo;
+    margin-bottom: 0;
   }
 
+
+}
+
+.photocard--top .photocard__author-image {
+  display: block;
+  object-fit:cover;
+  // width: 100%;
+  width: 320px;
+  height: auto;
+  margin: 0 auto;
+
+
+  @media (min-width: $tablet-width){
+    width: auto;
+    // width: 100%;
+    max-width: 660px;
+    height: 509px;
+  }
+
+  @media (min-width: $desktop-width){
+    width: auto;
+    min-width: 700px;
+    max-width: 1200px;
+    height: 506px;
+  }
+}
+
+.photocard--top .photocard__author-info {
+  margin: 0 auto;
+  width: 320px;
+
+  @media (min-width: $tablet-width){
+    width: 620px;
+  }
+  @media (min-width: $desktop-width){
+    width: 940px;
+    // margin-left: calc($margin-desktop--photo);
+    // margin-right: calc($margin-desktop--photo);
+  }
+}
+
+.photocard--top .photocard__author-image__wrapper {
+  position: relative;
+  display: contents;
+  background-color: red;
+@include border-help(15px, rgb(0, 89, 255));
+
+
   &::after {
-    position: absolute;
-    content:'панорама дня';
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 140px;
-    height: 36px;
-    top:0;
-    right: 20px;
-    z-index: 11;
+     position: absolute;
+     content:'панорама дня';
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 140px;
+     height: 36px;
+     top: 0;
+     right: 20px;
+     z-index: 11;
 
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 24px;
-    text-transform: uppercase;
-    color:white;
+     font-weight: 700;
+     font-size: 12px;
+     line-height: 24px;
+     text-transform: uppercase;
+     color:white;
 
-    background-color: $basic-pink;
+     background-color: $basic-pink;
 
-    @media (min-width: $tablet-width){
-      top: 57px;
-    }
+     @media (min-width: $tablet-width){
+       top: 54px;
+     }
 
     @media (min-width: $desktop-width){
       top: 54px;
@@ -135,40 +170,13 @@ $row-galp: 20px;
   }
 }
 
-.photocard--top .photocard__author-image {
-  width: 100%;
-  object-fit: cover;
-  height: 137px;
-
-
-  @media (min-width: $tablet-width){
-    height: 509px;
-  }
-
-}
-
-.photocard--top .photocard__author-info {
-  margin-left: 20px;
-  margin-right: 20px;
-
-  @media (min-width: $tablet-width){
-    margin-left: 20px;
-    margin-right: 20px;
-
-  }
-
-  @media (min-width: $desktop-width){
-    margin-left: calc($margin-desktop--photo);
-    margin-right: calc($margin-desktop--photo);
-  }
-
-}
 
 .photocard__author-image {
   position: relative;
   display: block;
   margin: 0 auto;
   width: 280px;
+  object-fit: cover;
 
   @media (min-width: $tablet-width){
     width: 300px;
@@ -176,10 +184,12 @@ $row-galp: 20px;
   }
 
   @media (min-width: $desktop-width){
+    width: auto;
+    max-width: 300px;
     height: 400px;
   }
-
 }
+
 
 .photocard--secondary .photocard__author-info {
   @media (max-width: $mobile-width-only){
@@ -189,9 +199,8 @@ $row-galp: 20px;
 }
 
 .photocard__author-info {
-// @include border-help(5px, rgb(34, 0, 255));
-  display: flex;
   position: relative;
+  display: flex;
   flex-direction: column;
   flex-grow: 2;
 
@@ -201,13 +210,8 @@ $row-galp: 20px;
   padding-top: 25px;
   background-color: rgba(242, 242, 242, 1);
 
-  @media (min-width: $tablet-width){
-    // padding-bottom: 32px;
-  }
-
   @media (min-width: $desktop-width){
     padding-top: 31px;
-
   }
 }
 
@@ -226,28 +230,25 @@ $row-galp: 20px;
 
 .photocard__text {
   margin: 0;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
   font-size: 14px;
   line-height: 24px;
 
   @media (min-width: $tablet-width){
-    padding-bottom: 27px;
+    margin-bottom: 27px;
   }
 
   @media (min-width: $desktop-width){
-    padding-bottom: 31px;
+    margin-bottom: 31px;
   }
 }
 
 .photocard__like {
   position: relative;
-  // display: block;
 
-  // align-self: stretch;
-  margin-bottom: 0;
   margin-top: auto;
+  margin-bottom: 26px;
   padding-left: 28px;
-  padding-bottom: 26px;
 
   font-size: 12px;
   line-height: 24px;
@@ -255,10 +256,9 @@ $row-galp: 20px;
   color: $basic-pink;
   cursor: pointer;
 
-
   @media (min-width: $tablet-width){
     padding-left: 0;
-    padding-bottom: 31px;
+    margin-bottom: 31px;
   }
 
   &--icon {
@@ -280,13 +280,11 @@ $row-galp: 20px;
   }
 
   &:hover &--icon {
-    // fill-rule: nonzero;
     fill: $basic-pink;
   }
 }
 
 .photocard--top .photocard__like {
-  // background-color: red;
   @media (min-width: $tablet-width){
     position: absolute;
     top: 32px;
@@ -299,3 +297,28 @@ $row-galp: 20px;
     }
   }
 }
+
+
+// .photocard--secondary {
+//   @media (min-width: $tablet-width) and (max-width: $desktop-width){
+//     &:nth-of-type(2n) {
+//       margin-left: auto;
+//       margin-right: 0;
+//     }
+
+//     &:nth-of-type(2n+1) {
+//       margin-left: 0;
+//       margin-right: auto;
+//     }
+//   }
+
+//   @media (min-width: $desktop-width){
+//     margin-left: auto;
+//     margin-right: 0;
+
+//     &:nth-child(3n+3) {
+//       margin-left: 0;
+//       margin-right: auto;
+//     }
+//   }
+// }
