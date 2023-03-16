@@ -71,7 +71,11 @@ $row-galp: 20px;
 
 .photocard--top {
 @include border-help(5px, red);
-  width: auto;
+// position: relative;
+// left: 0;
+  width: 100vw;
+  // max-width: 100%;
+
 
   position: relative;
   order: 0;
@@ -95,17 +99,16 @@ $row-galp: 20px;
 
 .photocard--top .photocard__author-image {
   display: block;
-  object-fit:cover;
-  // width: 100%;
-  width: 320px;
-  height: auto;
+  object-fit: cover;
+  width: 100vw;
+  height: 150px;
   margin: 0 auto;
 
 
   @media (min-width: $tablet-width){
-    width: auto;
+    // width: auto;
     // width: 100%;
-    max-width: 660px;
+    // max-width: 660px;
     height: 509px;
   }
 
@@ -118,25 +121,21 @@ $row-galp: 20px;
 }
 
 .photocard--top .photocard__author-info {
-  margin: 0 auto;
-  width: 320px;
+  width: auto;
+  margin: 0 20px;
 
   @media (min-width: $tablet-width){
     width: 620px;
+    margin: 0 auto;
   }
   @media (min-width: $desktop-width){
     width: 940px;
-    // margin-left: calc($margin-desktop--photo);
-    // margin-right: calc($margin-desktop--photo);
   }
 }
 
 .photocard--top .photocard__author-image__wrapper {
   position: relative;
-  display: contents;
-  background-color: red;
-@include border-help(15px, rgb(0, 89, 255));
-
+  display: block;
 
   &::after {
      position: absolute;
@@ -215,7 +214,6 @@ $row-galp: 20px;
 }
 
 .photocard__author-name {
-  font-family: 'OpenSans';
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
@@ -286,7 +284,7 @@ $row-galp: 20px;
 .photocard--top .photocard__like {
   @media (min-width: $tablet-width){
     position: absolute;
-    top: 32px;
+    // top: 32px;
     right: 77px;
   }
 
