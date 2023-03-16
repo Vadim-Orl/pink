@@ -26,6 +26,10 @@
   url("../fonts/opensanslight.woff") format("woff");
  }
 
+body {
+  margin: 0;
+}
+
 *,::before,::after {
   box-sizing: border-box;
 }
@@ -62,7 +66,8 @@ a {
 .page-body {
   font-family: OpenSans;
   font-weight: 400;
-  margin-bottom: 500px;
+  // overflow-x:hidden;
+  // margin-bottom: 500px;
 }
 
 .button {
