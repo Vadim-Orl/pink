@@ -1,5 +1,4 @@
 $margin-desktop--photo: 130px;
-$row-galp: 20px;
 $row-gap-mobile: 20px;
 $row-gap-tablet: 20px;
 $row-gap-desktop: 54px;
@@ -65,7 +64,7 @@ $row-gap-desktop: 54px;
     grid-column-start: span 2;
     min-width: 660px;
     max-width: 1200px;
-    width: 100vw;
+    width: auto;
 
     margin-bottom: calc(50px - $row-gap-tablet) ;
   }
