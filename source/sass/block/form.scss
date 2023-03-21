@@ -1,0 +1,25 @@
+.form__title {
+  margin: 0;
+  padding: 0;
+  margin: 0 15px;
+  margin-top: 54px;
+  margin-bottom: 55px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+
+  text-align: center;
+  color: $basic-blue;
+
+
+  @media (max-width: $mobile-width-only){
+    &--request {
+      display: none;
+    }
+  }
+}
+
+.form__full-name {
+  margin-bottom: 44px;
+}

@@ -84,13 +84,118 @@
       </ul>
     </nav>
 
-    <p class="page-header__title ">
+    <h2 class="page-header__title ">
       Конкурс на самое безбашенное <br> путешествие с Пинк
-    </p>
+    </h2>
   </header>
 
   <main>
+    <section class="page-form">
+      <h3 class="form__title">
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        <span class="form__title--request">Пожалуйста, заполните форму ниже:</span>
+      </h3>
 
+      <form class="selection__form form" action="">
+        <fieldset class="form__block form__full-name">
+          <p class="form__block-point">
+            <label for="cat-name">фамилия:</label>
+            <input type="text" name="cat-name" value="Укажите фамилию *" id="user-name">
+          </p>
+          <p class="form__block-point">
+            <label for="cat-name">имя:</label>
+            <input type="text" name="user-secondname" value="Введите ваше имя *" id="user-secondname">
+          </p>
+          <p class="form__block-point">
+            <label for="cat-name">отчество:</label>
+            <input type="text" name="user-lastname" value="Ну и отчество тоже" id="user-lastname">
+          </p>
+        </fieldset>
+
+        <fieldset class="form__block form__photo-did">
+          <legend>Ваши безбашенные достижения в путешествии</legend>
+
+            <p class="form__block-point">
+              <label for="photo-did--shark">Сделал селфи с акулой</label>
+              <input type="checkbox" name="photo-did--shark" id="photo-did--shark">
+            </p>
+
+            <p class="form__block-point">
+              <label for="photo-did--beach">Обгорел на пляже</label>
+              <input type="checkbox" name="photo-did--beach" id="photo-did--beach">
+            </p>
+
+            <p class="form__block-point">
+              <label for="photo-did--noris">Видел Чака Норриса</label>
+              <input type="checkbox" name="photo-did--noris" id="photo-did--noris">
+            </p>
+
+            <p class="form__block-point">
+              <label for="photo-did--suvenirs">Накупил сувениров</label>
+              <input type="checkbox" name="photo-did--suvenirs" id="photo-did--suvenirs">
+            </p>
+
+            <p class="form__block-point">
+              <label for="photo-did--tower">Удержал башню</label>
+              <input type="checkbox" name="photo-did--tower" id="photo-did--tower">
+            </p>
+
+            <p class="form__block-point">
+              <label for="photo-did--hotel">Разгромил отель</label>
+              <input type="checkbox" name="photo-did--hotel" id="photo-did--hotel">
+            </p>
+        </fieldset>
+
+        <fieldset class="form__block form__contacts">
+          <legend>контактная информация</legend>
+
+          <p class="form__block-point">
+            <label for="user-phone">номер телефона</label>
+            <input type="tel" name="user-phone" placeholder="Номер, пожалуйста" pattern="[0-9]{1}-[0-9]{3}-[0-9]{4}" maxlength="11" id="user-phone">
+          </p>
+
+          <p class="form__block-point">
+            <label for="user-name">адрес почты</label>
+            <input type="email" name="user-name" value="Введите почту *" id="user-name">
+          </p>
+        </fieldset>
+
+        <fieldset class="form__block form__app">
+          <legend>С каким приложением путешествовали?</legend>
+
+          <p class="form__block-point">
+            <label for="form__app--ios">Pink для iOS</label>
+            <input type="radio" name="form__app--ios" checked id="form__app--ios">
+          </p>
+
+          <p class="form__block-point">
+            <label for="form__app--android">Pink на Android</label>
+            <input type="radio" name="form__app--android" id="form__app--android">
+          </p>
+
+          <p class="form__block-point">
+            <label for="form__app--windows">Windows Phone</label>
+            <input type="radio" name="form__app--windows" id="form__app--windows">
+          </p>
+        </fieldset>
+
+        <fieldset class="form__block form__emotions">
+          <legend>Опишите свои эмоции</legend>
+
+          <p class="form__block-point">
+            <textarea name="comments" id="" cols="30" rows="10" placeholder="Можно прям в красках, не
+            стесняясь в выражениях"></textarea>
+          </p>
+        </fieldset>
+
+        <div class="form_submit">
+          <input class="button form_submit-button" type="submit" value="Отправить форму">
+          <small>* — Обязательные поля</small>
+        </div>
+
+      </form>
+
+    </section>
   </main>
 
 
