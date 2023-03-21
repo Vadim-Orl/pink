@@ -148,6 +148,11 @@
 }
 
 //form__emotions
+
+.form__emotions {
+  margin-bottom: 52px;
+}
+
 .form__emotions .form__block-point {
   display: flex;
   justify-content: center;
@@ -160,3 +165,28 @@
 }
 
 //button
+
+.form_submit {
+  display: flex;
+  margin: 0 22px;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 66px;
+}
+
+.form_submit-button {
+  margin-bottom: 46px;
+  width: 100%;
+
+  background: #2AAB6D;
+  border: 2px solid #2AAB6D;
+  border-radius: 1px;
+}
+
+.form_submit small {
+
+text-transform: uppercase;
+
+font-size: 14px;
+color: #D22856;
+}
