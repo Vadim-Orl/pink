@@ -1,0 +1,242 @@
+.form__title {
+  margin: 0;
+  padding: 0;
+  margin: 0 15px;
+  margin-top: 54px;
+  margin-bottom: 55px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+
+  text-align: center;
+  color: $basic-blue;
+
+
+  @media (max-width: $mobile-width-only){
+    &--request {
+      display: none;
+    }
+  }
+}
+
+
+.form{
+  font-size: 18px;
+  line-height: 30px;
+}
+
+// .form input[type="text"],
+// .form input[type="textarea"],
+// .form input[type="tel"],
+// .form input[type="number"],
+// .form input[type="email"]{
+//   padding: 0 20px;
+//   flex-grow: 1;
+//   height: 59px;
+//   border: 2px solid #E5E5E5;
+//   border-radius: 1px;
+
+//   &:hover {
+//     border: 2px solid #283645;
+//   }
+
+//   &:active,
+//   &:focus {
+//     border: 2px solid #D22856;
+//   }
+// }
+
+
+// .form input[type="radio"],
+// .form input[type="checkbox"]{
+
+// // .form input[type="radio"]:checked,
+// // .form input[type="checkbox"]:checked{
+//   margin-left: 30px;
+//   // margin-bottom: 69px;
+//   appearance: none;
+
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     left: 1px;
+//     top: -2px;
+//     margin: auto;
+//     width: 35px;
+//     height: 35px;
+
+//     background-color: #ec1212;
+//     border: 2px solid #E5E5E5;
+//     border-radius: 1px;
+//   }
+
+//   &:hover {
+//     &::after {
+//       border: 2px solid #283645;
+//     }
+//   }
+
+//   &:focus {
+//     &::after {
+//       border: 2px solid #D22856;
+//     }
+//   }
+// }
+
+// .form input[type="checkbox"] {
+//   &::after {
+//     border-radius: none;
+//   }
+// }
+
+// .form input[type="radio"] {
+//   &::after {
+//     border-radius: 50%;
+//   }
+// }
+
+// .form input[type="checkbox"]:checked {
+//   &::after {
+//     border-radius: none;
+//   }
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     width: 26px;
+//     height: 26px;
+//     top: 5px;
+//     left: 7px;
+//     background-image: url("../img/icon-tick.svg");
+//     background-repeat: no-repeat;
+//     fill:red;
+//   }
+// }
+
+// .form input[type="radio"]:checked {
+//   &::after {
+//     outline: 8px solid $basic_green;
+//     outline-offset: -50px;
+//     border-radius: 50%;
+//   }
+// }
+
+
+.form__block {
+  padding: 0;
+  border: none;
+}
+
+.form__block-point label,
+.form__block-point legend,
+.form__legend-for-mobile {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.form__block-point legend,
+.form__legend-for-mobile {
+  color: $basic-pink;
+  text-align: center;
+  line-height: 18px;
+}
+
+.form__block-point {
+  position: relative;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.form__full-name label{
+  margin-left: calc(43px - $margin-mobile) ;
+  color: $basic-pink;
+  text-transform: uppercase;
+}
+
+//name
+
+.form__full-name {
+  margin-bottom: 44px;
+  margin-left: 22px;
+  margin-right: 22px;
+}
+
+.form__full-name .form__block-point {
+  // display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 29px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+  // align-items: flex-start;
+}
+
+// photo did
+
+.form__photo-did {
+  background-color: #F2F2F2;
+  margin: 0;
+  margin-bottom: 42px;
+  padding: 0 20px;
+  padding-top: 42px;
+  padding-bottom: 55px;
+}
+
+.form__photo-did label{
+  color: $basic_blue;
+  margin-left: 22px;
+  font-size: 18px;
+  text-align: start;
+}
+
+.form__photo-did ul {
+  margin: 0;
+  padding: 0;
+}
+
+.form__photo-did .form__block-point {
+  position: relative;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-bottom: 69px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+//form__contacts
+
+.form__contacts {
+  margin-bottom: 44px;
+  padding: 0 22px;
+}
+
+.form__contacts .form__block-point{
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-bottom: 29px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__contacts {
+
+
+}
+
+.form__contacts legend {
+  display: none;
+}
