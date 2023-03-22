@@ -101,15 +101,15 @@
         <fieldset class="form__block form__full-name">
           <p class="form__block-point">
             <label class="form__label--user-data" for="cat-name">фамилия:</label>
-            <input type="text" name="cat-name" value="Укажите фамилию *" id="user-name">
+            <input type="text" name="cat-name" placeholder="Укажите фамилию *" id="user-name">
           </p>
           <p class="form__block-point">
             <label class="form__label--user-data" for="cat-name">имя:</label>
-            <input type="text" name="user-secondname" value="Введите ваше имя *" id="user-secondname">
+            <input type="text" name="user-secondname" placeholder="Введите ваше имя *" id="user-secondname">
           </p>
           <p class="form__block-point">
             <label class="form__label--user-data" for="cat-name">отчество:</label>
-            <input type="text" name="user-lastname" value="Ну и отчество тоже" id="user-lastname">
+            <input type="text" name="user-lastname" placeholder="Ну и отчество тоже" id="user-lastname">
           </p>
         </fieldset>
 
@@ -122,27 +122,33 @@
           <ul>
             <li class="form__block-point">
               <label for="photo-did--shark">Сделал селфи с акулой</label>
-              <input class="visually-hidden" type="checkbox" name="photo-did--shark" id="photo-did--shark">
+              <input type="checkbox" name="photo-did--shark" id="photo-did--shark">
+              <!-- <span class="checkbox-indicator"></span> -->
             </li>
             <li class="form__block-point">
               <label for="photo-did--beach">Обгорел на пляже</label>
-              <input class="visually-hidden" type="checkbox" name="photo-did--beach" id="photo-did--beach">
+              <input type="checkbox" name="photo-did--beach" id="photo-did--beach">
+              <!-- <span class="checkbox-indicator"></span> -->
             </li>
             <li class="form__block-point">
               <label for="photo-did--noris">Видел Чака Норриса</label>
-              <input class="visually-hidden" type="checkbox" name="photo-did--noris" id="photo-did--noris">
+              <input type="checkbox" name="photo-did--noris" id="photo-did--noris">
+              <!-- <span class="checkbox-indicator"></span> -->
             </li>
             <li class="form__block-point">
               <label for="photo-did--suvenirs">Накупил сувениров</label>
-              <input class="visually-hidden" type="checkbox" name="photo-did--suvenirs" id="photo-did--suvenirs">
+              <input type="checkbox" name="photo-did--suvenirs" id="photo-did--suvenirs">
+              <!-- <span class="checkbox-indicator"></span> -->
             </li>
             <li class="form__block-point">
               <label for="photo-did--tower">Удержал башню</label>
-              <input class="visually-hidden" type="checkbox" name="photo-did--tower" id="photo-did--tower">
+              <input type="checkbox" name="photo-did--tower" id="photo-did--tower">
+              <!-- <span class="checkbox-indicator"></span> -->
             </li>
             <li class="form__block-point">
               <label for="photo-did--hotel">Разгромил отель</label>
-              <input class="visually-hidden" type="checkbox" name="photo-did--hotel" id="photo-did--hotel">
+              <input type="checkbox" name="photo-did--hotel" id="photo-did--hotel">
+              <!-- <span class="checkbox-indicator"></span> -->
             </li>
           </ul>
         </fieldset>
@@ -157,7 +163,7 @@
 
           <p class="form__block-point">
             <label class="form__label--user-data" for="user-name">адрес почты</label>
-            <input type="email" name="user-name" value="Введите почту *" id="user-name">
+            <input type="email" name="user-name" placeholder="Введите почту *" id="user-name">
           </p>
         </fieldset>
 
@@ -168,17 +174,17 @@
 
           <p class="form__block-point">
             <label for="form__app--ios">Pink для iOS</label>
-            <input class="visually-hidden" type="radio" name="form__app--ios" checked id="form__app--ios">
+            <input type="radio" name="form__app" value="form__app--ios" checked id="form__app--ios">
           </p>
 
           <p class="form__block-point">
             <label for="form__app--android">Pink на Android</label>
-            <input class="visually-hidden" type="radio" name="form__app--android" id="form__app--android">
+            <input type="radio" name="form__app" value="form__app--android" id="form__app--android">
           </p>
 
           <p class="form__block-point">
             <label for="form__app--windows">Windows Phone</label>
-            <input class="visually-hidden" type="radio" name="form__app--windows" id="form__app--windows">
+            <input type="radio" name="form__app" value="form__app--windows" id="form__app--windows">
           </p>
         </fieldset>
 
@@ -188,8 +194,7 @@
 
 
           <p class="form__block-point">
-            <textarea name="comments" id="" cols="30" rows="10" placeholder="Можно прям в красках, не
-            стесняясь в выражениях"></textarea>
+            <textarea name="comments" id="" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </p>
         </fieldset>
 
