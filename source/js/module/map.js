@@ -1,4 +1,6 @@
 
+
+
 function init() {
   let map = new ymaps.Map("map", {
     center: [59.94255200890565, 30.360984362273697],
