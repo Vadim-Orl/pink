@@ -1,3 +1,8 @@
+import User form './module/tmp.js'
+let a = new User('vad');
+console.log(a)
+
+
 let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
 
