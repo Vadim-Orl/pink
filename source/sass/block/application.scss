@@ -1,13 +1,11 @@
 .application {
   position: relative;
-  // padding-top: 20px;
   @media (min-width: $tablet-width){
     min-height: 622px;
     padding-top: 102px;
   }
 
   @media (min-width: $desktop-width){
-    // margin-left: 130px;
     height: 743px;
   }
 
@@ -26,14 +24,10 @@
     width: 300px;
     margin-left: 20px;
     margin-right: auto;
-
-    // @include border-help(5px, red);
-
   }
 
   @media (min-width: $desktop-width){
     margin-left: 130px;
-    // height: 743px;
   }
 }
 
@@ -75,7 +69,6 @@
     right: 0;
     bottom: 0;
     margin: auto;
-    // z-index: -1;
   }
 }
 

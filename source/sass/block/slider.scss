@@ -8,7 +8,6 @@
     max-width: 960px;
     margin: 0 auto;
   }
-  // @include border-help(2px, rgb(23, 13, 101));
 }
 
 .slider__list {
@@ -28,7 +27,6 @@
   margin-bottom: 50px;
   padding: 0 20px;
   width: 100%;
-  // @include border-help(15px, red);
 }
 
 .slider_toggles {
@@ -65,7 +63,6 @@
 }
 
 .slider__btn {
-  // @include border-help(2px, rgb(23, 13, 101));
   position: absolute;
   background-color: white;
   border: 0;
@@ -74,8 +71,6 @@
   height: 100%;
   top: 0;
 
-  // opacity: 0.3;
-// z-index: 1;
   &:hover {
     opacity: 1;
   }

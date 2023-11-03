@@ -15,7 +15,6 @@ $desktop-margin: 117px;
   @media (min-width: $desktop-width){
     margin: 74px $desktop-margin 61px $desktop-margin;
 
-
   }
 }
 
@@ -29,7 +28,6 @@ $desktop-margin: 117px;
 
   @media (min-width: $desktop-width){
     margin-bottom: 61px;
-
 
   }
 }
@@ -79,7 +77,6 @@ $desktop-margin: 117px;
 
 .contacts__map {
   position: relative;
-  // @include border-help(5px, red);
   margin-left: -$mobile-margin;
   margin-right: -$mobile-margin;
   height: 200px;
@@ -109,7 +106,3 @@ $desktop-margin: 117px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' width='100%25' height='100%25' viewBox='0 0 1 1' preserveAspectRatio='none' %3E%3Cpolygon fill='%23ffffff' points='0.5,1 0,0 1,0'/%3E%3C/svg%3E");
   }
 }
-// ymaps-2-1-79-
-// [class*="gototaxi__container"]{
-//   display: none;
-// }
